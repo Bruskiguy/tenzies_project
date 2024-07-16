@@ -49,7 +49,7 @@ const napoleonQuotes = [
 
 export default function Home() {
   const generateRandomNumbers = () => {
-    return Array.from({ length: 8 }, () => Math.floor(Math.random() * 6) + 1);
+    return Array.from({ length: 10 }, () => Math.floor(Math.random() * 6) + 1);
   };
 
   const [numbers, setNumbers] = useState<number[]>(generateRandomNumbers());
@@ -120,7 +120,7 @@ export default function Home() {
         Click on a number to save it, roll and click till you select all and
         WIN!
       </h2>
-      <div className="flex flex-wrap justify-center items-center w-80 h-80 bg-white border-2 border-gray-700 rounded-lg p-4">
+      <div className="flex flex-wrap justify-center items-center w-auto h-auto min-h-80 max-w-80 bg-white border-2 border-gray-700 rounded-lg p-4">
         {numbers.map((number, index) => (
           <button
             key={index}
