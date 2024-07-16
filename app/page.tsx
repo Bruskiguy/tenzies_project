@@ -110,6 +110,11 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-center items-center min-h-screen bg-gray-100">
+      <h1 className="text-gray-700 text-xl font-bold mb-4">Tenzies!</h1>
+      <h2 className="text-gray-700 text-l font-bold mb-4">
+        Click on a number to save it, roll and click till you select all and
+        WIN!
+      </h2>
       <div className="flex flex-wrap justify-center items-center w-80 h-80 bg-white border-2 border-gray-700 rounded-lg p-4">
         {numbers.map((number, index) => (
           <button
